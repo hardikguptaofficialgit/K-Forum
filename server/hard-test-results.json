@@ -1,0 +1,360 @@
+[
+  {
+    "id": 1,
+    "detected": true,
+    "confidence": 0.8,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi",
+      "chod"
+    ]
+  },
+  {
+    "id": 2,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 3,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 4,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 5,
+    "detected": true,
+    "confidence": 0.8,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi",
+      "chod"
+    ]
+  },
+  {
+    "id": 6,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 7,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 8,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 9,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 10,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 11,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 12,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 13,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 14,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 15,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 16,
+    "detected": true,
+    "confidence": 1,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "madarchod",
+      "chutiya",
+      "chut",
+      "chod"
+    ]
+  },
+  {
+    "id": 17,
+    "detected": true,
+    "confidence": 1,
+    "categories": [
+      "harassment",
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "bhenkelode",
+      "lode",
+      "chod"
+    ]
+  },
+  {
+    "id": 18,
+    "detected": true,
+    "confidence": 0.8,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "harami",
+      "kamine"
+    ]
+  },
+  {
+    "id": 19,
+    "detected": true,
+    "confidence": 0.95,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "madarchod",
+      "lund",
+      "chod"
+    ]
+  },
+  {
+    "id": 20,
+    "detected": true,
+    "confidence": 1,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "saala",
+      "gand",
+      "gandu"
+    ]
+  },
+  {
+    "id": 21,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "bhosdike"
+    ]
+  },
+  {
+    "id": 22,
+    "detected": true,
+    "confidence": 0.65,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "randi"
+    ]
+  },
+  {
+    "id": 23,
+    "detected": true,
+    "confidence": 0.95,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "chutiya",
+      "chut",
+      "saala"
+    ]
+  },
+  {
+    "id": 24,
+    "detected": true,
+    "confidence": 0.95,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "madarchod",
+      "kamina",
+      "chod"
+    ]
+  },
+  {
+    "id": 25,
+    "detected": true,
+    "confidence": 0.8,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "lund",
+      "chod"
+    ]
+  },
+  {
+    "id": 26,
+    "detected": true,
+    "confidence": 0.95,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "chut",
+      "saale",
+      "chutiye"
+    ]
+  },
+  {
+    "id": 27,
+    "detected": true,
+    "confidence": 1,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "madarchod",
+      "gand",
+      "gandu",
+      "chod"
+    ]
+  },
+  {
+    "id": 28,
+    "detected": true,
+    "confidence": 0.8,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "saale",
+      "harami"
+    ]
+  },
+  {
+    "id": 29,
+    "detected": true,
+    "confidence": 1,
+    "categories": [
+      "harassment",
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "bhenkelode",
+      "lode"
+    ]
+  },
+  {
+    "id": 30,
+    "detected": true,
+    "confidence": 0.95,
+    "categories": [
+      "local_filter"
+    ],
+    "flaggedWords": [
+      "chutiya",
+      "chut",
+      "randi"
+    ]
+  }
+]

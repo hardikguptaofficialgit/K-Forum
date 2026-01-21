@@ -1,0 +1,22 @@
+{
+  "name": "K-Forum Student Community Platform",
+  "short_name": "K-Forum",
+  "description": "A community platform for KIIT University students",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/kflogo.png",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/kflogo.png",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
