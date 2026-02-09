@@ -40,7 +40,7 @@ const ImageViewer = ({ images, initialIndex = 0, onClose }) => {
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-white hover:text-[#17d059] transition-colors"
+          className="absolute top-4 right-4 text-white hover:text-[#a78bfa] transition-colors"
         >
           <X className="w-8 h-8" />
         </button>
@@ -50,13 +50,13 @@ const ImageViewer = ({ images, initialIndex = 0, onClose }) => {
           <>
             <button
               onClick={handlePrevious}
-              className="absolute left-4 text-white hover:text-[#17d059] transition-colors"
+              className="absolute left-4 text-white hover:text-[#a78bfa] transition-colors"
             >
               <ChevronLeft className="w-8 h-8" />
             </button>
             <button
               onClick={handleNext}
-              className="absolute right-4 text-white hover:text-[#17d059] transition-colors"
+              className="absolute right-4 text-white hover:text-[#a78bfa] transition-colors"
             >
               <ChevronRight className="w-8 h-8" />
             </button>
@@ -67,13 +67,13 @@ const ImageViewer = ({ images, initialIndex = 0, onClose }) => {
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-4">
           <button
             onClick={handleZoomOut}
-            className="text-white hover:text-[#17d059] transition-colors"
+            className="text-white hover:text-[#a78bfa] transition-colors"
           >
             <ZoomOut className="w-6 h-6" />
           </button>
           <button
             onClick={handleZoomIn}
-            className="text-white hover:text-[#17d059] transition-colors"
+            className="text-white hover:text-[#a78bfa] transition-colors"
           >
             <ZoomIn className="w-6 h-6" />
           </button>

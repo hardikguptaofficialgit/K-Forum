@@ -95,7 +95,7 @@ const Register = () => {
           {step === 1 ? (
             <>
               <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <User className="w-8 h-8 text-white" />
                 </div>
                 <h1 className="text-3xl font-bold text-white mb-2">Join K-Forum</h1>
@@ -115,7 +115,7 @@ const Register = () => {
                       value={formData.name}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
@@ -133,7 +133,7 @@ const Register = () => {
                       value={formData.email}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                       placeholder="your.email@kiit.ac.in"
                     />
                   </div>
@@ -151,7 +151,7 @@ const Register = () => {
                       value={formData.studentId}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                       placeholder="Your student ID"
                     />
                   </div>
@@ -167,7 +167,7 @@ const Register = () => {
                       value={formData.year}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                     >
                       <option value="">Select</option>
                       <option value="1">1st Year</option>
@@ -186,7 +186,7 @@ const Register = () => {
                       value={formData.branch}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                     >
                       <option value="">Select</option>
                       {branches.map((branch) => (
@@ -211,7 +211,7 @@ const Register = () => {
                       onChange={handleChange}
                       required
                       minLength="6"
-                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                       placeholder="Create a password"
                     />
                   </div>
@@ -229,7 +229,7 @@ const Register = () => {
                       value={formData.confirmPassword}
                       onChange={handleChange}
                       required
-                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors"
+                      className="w-full bg-gray-700 text-white pl-10 pr-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors"
                       placeholder="Confirm your password"
                     />
                   </div>
@@ -238,7 +238,7 @@ const Register = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-gradient-to-r from-[#17d059] to-emerald-600 text-white py-3 rounded-lg font-semibold hover:from-[#15b84f] hover:to-emerald-700 focus:outline-none focus:ring-4 focus:ring-[#17d059]/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                  className="w-full bg-gradient-to-r from-[#a78bfa] to-violet-600 text-white py-3 rounded-lg font-semibold hover:from-[#8b5cf6] hover:to-violet-700 focus:outline-none focus:ring-4 focus:ring-[#a78bfa]/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                 >
                   {loading ? 'Creating Account...' : 'Create Account'}
                 </button>
@@ -247,7 +247,7 @@ const Register = () => {
           ) : (
             <>
               <div className="text-center mb-8">
-                <div className="w-16 h-16 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center mx-auto mb-4">
                   <Shield className="w-8 h-8 text-white" />
                 </div>
                 <h1 className="text-3xl font-bold text-white mb-2">Verify Email</h1>
@@ -265,7 +265,7 @@ const Register = () => {
                     onChange={(e) => setOtp(e.target.value)}
                     required
                     maxLength="6"
-                    className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none transition-colors text-center text-2xl tracking-widest"
+                    className="w-full bg-gray-700 text-white px-4 py-3 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none transition-colors text-center text-2xl tracking-widest"
                     placeholder="000000"
                   />
                 </div>
@@ -273,7 +273,7 @@ const Register = () => {
                 <button
                   type="submit"
                   disabled={loading}
-                  className="w-full bg-gradient-to-r from-[#17d059] to-emerald-600 text-white py-3 rounded-lg font-semibold hover:from-[#15b84f] hover:to-emerald-700 focus:outline-none focus:ring-4 focus:ring-[#17d059]/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
+                  className="w-full bg-gradient-to-r from-[#a78bfa] to-violet-600 text-white py-3 rounded-lg font-semibold hover:from-[#8b5cf6] hover:to-violet-700 focus:outline-none focus:ring-4 focus:ring-[#a78bfa]/50 disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200"
                 >
                   {loading ? 'Verifying...' : 'Verify Email'}
                 </button>
@@ -284,7 +284,7 @@ const Register = () => {
           <div className="mt-8 text-center">
             <p className="text-gray-400">
               Already have an account?{' '}
-              <Link to="/login" className="text-[#17d059] hover:text-emerald-400 font-medium">
+              <Link to="/login" className="text-[#a78bfa] hover:text-violet-400 font-medium">
                 Sign in here
               </Link>
             </p>

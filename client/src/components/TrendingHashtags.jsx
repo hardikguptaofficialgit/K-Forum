@@ -36,7 +36,7 @@ const TrendingHashtags = ({ onTagClick }) => {
         return (
             <div className="space-y-4">
                 <div className="flex items-center gap-2 mb-4">
-                    <TrendingUp className="w-5 h-5 text-emerald-400" />
+                    <TrendingUp className="w-5 h-5 text-violet-400" />
                     <h3 className="text-white font-bold">Trending Now</h3>
                 </div>
                 <div className="space-y-3">
@@ -63,7 +63,7 @@ const TrendingHashtags = ({ onTagClick }) => {
     return (
         <div className="w-full">
             <div className="flex items-center gap-2 mb-6">
-                <TrendingUp className="w-5 h-5 text-emerald-400" />
+                <TrendingUp className="w-5 h-5 text-violet-400" />
                 <h3 className="text-white font-bold">Trending Now</h3>
             </div>
             <div className="space-y-2">
@@ -75,9 +75,9 @@ const TrendingHashtags = ({ onTagClick }) => {
                     >
                         <div className="flex items-center justify-between">
                             <div className="flex items-center gap-3">
-                                <span className={`text-sm font-mono font-bold w-4 ${index < 3 ? 'text-emerald-400' : 'text-gray-600'}`}>{index + 1}</span>
+                                <span className={`text-sm font-mono font-bold w-4 ${index < 3 ? 'text-violet-400' : 'text-gray-600'}`}>{index + 1}</span>
                                 <div className="flex items-center gap-1">
-                                    <Hash className="w-3.5 h-3.5 text-emerald-500/50 group-hover:text-emerald-400 transition-colors" />
+                                    <Hash className="w-3.5 h-3.5 text-violet-500/50 group-hover:text-violet-400 transition-colors" />
                                     <span className="text-gray-300 font-medium group-hover:text-white transition-colors">
                                         {item.tag}
                                     </span>

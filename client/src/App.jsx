@@ -78,9 +78,9 @@ const MainContainer = () => {
         position="top-right"
         toastOptions={{
           style: {
-            background: '#1f2937',
+            background: '#111827',
             color: '#f9fafb',
-            border: '1px solid #374151'
+            border: '1px solid #8b5cf655'
           }
         }}
       />

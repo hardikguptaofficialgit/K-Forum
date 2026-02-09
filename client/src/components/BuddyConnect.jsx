@@ -69,7 +69,7 @@ const BuddyConnect = () => {
     return (
         <div className="glass-panel rounded-3xl p-5 mt-6 w-full">
             <h3 className="flex items-center gap-2 font-bold text-white mb-4">
-                <Users className="w-5 h-5 text-emerald-400" />
+                <Users className="w-5 h-5 text-violet-400" />
                 Buddy Connect
             </h3>
             <div className="space-y-4">
@@ -83,7 +83,7 @@ const BuddyConnect = () => {
                                     className="w-10 h-10 rounded-full border border-gray-700 object-cover"
                                 />
                                 {sentRequests.includes(user._id) && (
-                                    <div className="absolute -bottom-1 -right-1 bg-emerald-500 rounded-full p-0.5 border-2 border-[#0f1115]">
+                                    <div className="absolute -bottom-1 -right-1 bg-violet-500 rounded-full p-0.5 border-2 border-[#0f1115]">
                                         <UserCheck className="w-2 h-2 text-white" />
                                     </div>
                                 )}
@@ -100,8 +100,8 @@ const BuddyConnect = () => {
                                 absolute right-0 top-1/2 -translate-y-1/2
                                 p-2 rounded-xl transition-all duration-300
                                 ${sentRequests.includes(user._id)
-                                    ? 'bg-emerald-500/10 text-emerald-400 cursor-default'
-                                    : 'bg-white/5 text-gray-400 hover:bg-emerald-500 hover:text-white hover:shadow-lg hover:shadow-emerald-500/20'
+                                    ? 'bg-violet-500/10 text-violet-400 cursor-default'
+                                    : 'bg-white/5 text-gray-400 hover:bg-violet-500 hover:text-white hover:shadow-lg hover:shadow-violet-500/20'
                                 }
                             `}
                             title={sentRequests.includes(user._id) ? "Request Sent" : "Connect"}

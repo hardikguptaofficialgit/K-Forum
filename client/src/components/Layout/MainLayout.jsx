@@ -6,12 +6,7 @@ const MainLayout = ({ children }) => {
     const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
     return (
-        <div className="min-h-screen bg-[#0f1115] text-gray-100 font-sans selection:bg-emerald-500/30">
-            {/* Desktop Background Ambience */}
-            <div className="fixed inset-0 z-0 pointer-events-none overflow-hidden">
-                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-emerald-500/10 rounded-full blur-[120px]" />
-                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-600/10 rounded-full blur-[120px]" />
-            </div>
+        <div className="min-h-screen bg-transparent text-gray-100 font-sans selection:bg-violet-500/30">
 
             {/* Navigation */}
             <Sidebar isOpen={isSidebarOpen} setIsOpen={setIsSidebarOpen} />

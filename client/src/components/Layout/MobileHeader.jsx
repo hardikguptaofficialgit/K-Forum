@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
-import { Home, Gamepad2, PlusSquare, Search, User, Menu, X, Sparkles, Shield, Calendar, Users } from 'lucide-react';
+import { Home, Gamepad2, PlusSquare, Search, User, Menu, X, Shield, Calendar, Users } from 'lucide-react';
 import { useAuth } from '../../contexts/AuthContext';
 import TrendingHashtags from '../TrendingHashtags';
 
@@ -36,7 +36,7 @@ const MobileHeader = () => {
             {/* Top Bar */}
             <div className="md:hidden fixed top-0 left-0 right-0 z-[60] glass-panel border-b border-gray-700/50 px-4 py-3 flex items-center justify-between backdrop-blur-xl">
                 <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-tr from-emerald-400 to-cyan-500 rounded-lg flex items-center justify-center shadow-lg shadow-emerald-500/20">
+                    <div className="w-8 h-8 bg-gradient-to-tr from-violet-400 to-fuchsia-500 rounded-lg flex items-center justify-center ">
                         <span className="text-white font-black text-lg">K</span>
                     </div>
                     <span className="text-lg font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
@@ -62,13 +62,13 @@ const MobileHeader = () => {
                     {user && (
                         <div className="flex items-center gap-4 mb-8 p-4 bg-white/5 rounded-2xl border border-white/10 shrink-0">
                             <img
-                                src={user.avatar || `https://ui-avatars.com/api/?name=${user.name}&background=10b981&color=fff`}
+                                src={user.avatar || `https://ui-avatars.com/api/?name=${user.name}&background=8b5cf6&color=fff`}
                                 alt={user.name}
-                                className="w-12 h-12 rounded-full border-2 border-emerald-500/30"
+                                className="w-12 h-12 rounded-full border-2 border-violet-500/30"
                             />
                             <div>
                                 <h3 className="text-white font-bold text-lg">{user.name}</h3>
-                                <p className="text-emerald-400 text-sm font-medium">@{user.studentId}</p>
+                                <p className="text-violet-400 text-sm font-medium">@{user.studentId}</p>
                             </div>
                         </div>
                     )}
@@ -83,7 +83,7 @@ const MobileHeader = () => {
                                 className={({ isActive }) => `
                                     flex items-center gap-4 p-4 rounded-xl transition-all duration-200
                                     ${isActive
-                                        ? 'bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 text-emerald-400 border border-emerald-500/30'
+                                        ? 'bg-gradient-to-r from-violet-500/20 to-fuchsia-500/20 text-violet-400 border border-violet-500/30'
                                         : 'text-gray-400 hover:bg-white/5 hover:text-white'
                                     }
                                 `}
@@ -92,7 +92,7 @@ const MobileHeader = () => {
                                     <>
                                         <item.icon className="w-6 h-6" strokeWidth={2.5} />
                                         <span className="font-bold text-lg">{item.label}</span>
-                                        {isActive && <Sparkles className="w-4 h-4 ml-auto text-emerald-400 animate-pulse" />}
+                                        {isActive && <span className="ml-auto h-2.5 w-2.5 rounded-full bg-violet-400" />}
                                     </>
                                 )}
                             </NavLink>

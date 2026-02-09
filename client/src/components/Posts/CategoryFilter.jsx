@@ -21,7 +21,7 @@ const CategoryFilter = ({ selectedCategory, onCategoryChange }) => {
             key={category.id}
             onClick={() => onCategoryChange(category.id)}
             className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl text-left transition-all duration-300 relative group overflow-hidden ${selectedCategory === category.id
-                ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/20'
+                ? 'bg-violet-500 text-white shadow-lg shadow-violet-500/20'
                 : 'text-gray-400 hover:bg-white/5 hover:text-white'
               }`}
           >

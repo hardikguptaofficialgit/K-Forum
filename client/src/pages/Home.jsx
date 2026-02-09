@@ -136,7 +136,7 @@ const Home = () => {
       {/* Floating Action Button */}
       <button
         onClick={handleCreatePost}
-        className="fixed bottom-8 right-8 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg hover:shadow-emerald-500/50 hover:scale-105 transition-all duration-300 z-50 animate-bounce-in"
+        className="fixed bottom-8 right-8 bg-gradient-to-r from-violet-500 to-purple-500 hover:from-violet-400 hover:to-purple-400 text-white w-16 h-16 rounded-2xl flex items-center justify-center border border-violet-300/30 hover:scale-105 transition-all duration-300 z-50 animate-bounce-in"
       >
         <Plus className="w-8 h-8" />
       </button>
@@ -145,8 +145,7 @@ const Home = () => {
       <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6 mb-6 md:mb-8 mt-4">
         {/* Search & Sort Bar */}
         <div className="w-full md:flex-1 relative group order-2 md:order-1">
-          <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-500/20 to-cyan-500/20 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500" />
-          <div className="relative bg-[#0f1115] border border-white/5 rounded-2xl flex items-center p-2 shadow-xl">
+          <div className="relative bg-[#0f1115]/90 border border-violet-400/20 rounded-2xl flex items-center p-2">
             <Search className="text-gray-500 w-5 h-5 ml-4" />
             <input
               type="text"
@@ -177,7 +176,7 @@ const Home = () => {
         <div className="bg-[#0f1115] border border-white/10 p-1 rounded-xl flex items-center relative shrink-0 h-[50px] w-full md:w-[260px] order-1 md:order-2">
           {/* Sliding Indicator Background */}
           <div
-            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-gradient-to-tr from-emerald-500 to-teal-500 rounded-lg shadow-lg shadow-emerald-500/20 transition-all duration-300 ease-out ${activeTab === 'friends' ? 'translate-x-[100%] left-1' : 'left-1'
+            className={`absolute top-1 bottom-1 w-[calc(50%-4px)] bg-gradient-to-tr from-violet-500 to-purple-500 rounded-lg transition-all duration-300 ease-out ${activeTab === 'friends' ? 'translate-x-[100%] left-1' : 'left-1'
               }`}
           />
 
@@ -219,8 +218,8 @@ const Home = () => {
                 className="w-full bg-[#0f1115] border border-white/5 rounded-3xl p-5 flex items-center justify-between hover:bg-white/5 transition-all group"
               >
                 <div className="flex items-center gap-4">
-                  <div className="p-3 bg-emerald-500/10 rounded-2xl group-hover:bg-emerald-500/20 transition-colors">
-                    <Filter className="w-5 h-5 text-emerald-400" />
+                  <div className="p-3 bg-violet-500/10 rounded-2xl group-hover:bg-violet-500/20 transition-colors">
+                    <Filter className="w-5 h-5 text-violet-400" />
                   </div>
                   <div className="text-left">
                     <h3 className="font-bold text-white text-sm">Filters</h3>
@@ -246,7 +245,7 @@ const Home = () => {
                         setSelectedCategory('all');
                         setIsFilterOpen(false);
                       }}
-                      className={`w-full text-left px-4 py-3 rounded-2xl text-xs font-bold transition-all ${selectedCategory === 'all' ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/20' : 'text-gray-400 hover:bg-white/5 hover:text-white'}`}
+                      className={`w-full text-left px-4 py-3 rounded-2xl text-xs font-bold transition-all ${selectedCategory === 'all' ? 'bg-violet-500 text-white' : 'text-gray-400 hover:bg-white/5 hover:text-white'}`}
                     >
                       All Posts
                     </button>
@@ -266,7 +265,7 @@ const Home = () => {
                           setSelectedCategory(cat.value);
                           setIsFilterOpen(false);
                         }}
-                        className={`w-full text-left px-4 py-3 rounded-2xl text-xs font-bold transition-all ${selectedCategory === cat.value ? 'bg-emerald-500 text-white shadow-lg shadow-emerald-500/20' : 'text-gray-400 hover:bg-white/5 hover:text-white'}`}
+                        className={`w-full text-left px-4 py-3 rounded-2xl text-xs font-bold transition-all ${selectedCategory === cat.value ? 'bg-violet-500 text-white' : 'text-gray-400 hover:bg-white/5 hover:text-white'}`}
                       >
                         {cat.label}
                       </button>

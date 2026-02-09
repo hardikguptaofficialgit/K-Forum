@@ -32,7 +32,7 @@ const PostCard = ({ post, onDelete }) => {
       academics: 'bg-blue-500',
       events: 'bg-purple-500',
       rants: 'bg-red-500',
-      internships: 'bg-[#17d059]',
+      internships: 'bg-[#a78bfa]',
       'lost-found': 'bg-yellow-500',
       clubs: 'bg-indigo-500',
       general: 'bg-gray-500'
@@ -119,7 +119,7 @@ const PostCard = ({ post, onDelete }) => {
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center justify-between w-full">
           <div className="flex items-center space-x-3">
-            <div className="w-10 h-10 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center overflow-hidden">
+            <div className="w-10 h-10 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center overflow-hidden">
               {post.author?.avatar ? (
                 <img
                   src={post.author.avatar}
@@ -135,7 +135,7 @@ const PostCard = ({ post, onDelete }) => {
                 {post.author ? (
                   <Link
                     to={`/user/${post.author._id}`}
-                    className="hover:text-[#17d059] transition-colors"
+                    className="hover:text-[#a78bfa] transition-colors"
                   >
                     {post.author.name} ({post.author.studentId})
                   </Link>
@@ -198,7 +198,7 @@ const PostCard = ({ post, onDelete }) => {
 
       <div className="mt-4 space-y-4">
         <Link to={`/post/${post._id}`} className="block">
-          <h3 className="text-xl font-semibold text-white mb-3 hover:text-[#17d059] transition-colors">
+          <h3 className="text-xl font-semibold text-white mb-3 hover:text-[#a78bfa] transition-colors">
             {post.title}
           </h3>
           <p className="text-gray-300 mb-4 line-clamp-3">
@@ -257,7 +257,7 @@ const PostCard = ({ post, onDelete }) => {
           {post.tags.map((tag, index) => (
             <span
               key={index}
-              className="px-2 py-1 bg-white/5 border border-white/5 text-[#17d059] text-xs rounded-full"
+              className="px-2 py-1 bg-white/5 border border-white/5 text-[#a78bfa] text-xs rounded-full"
             >
               #{tag}
             </span>
@@ -353,7 +353,7 @@ const PostCard = ({ post, onDelete }) => {
               value={reportReason}
               onChange={(e) => setReportReason(e.target.value)}
               placeholder="Please provide a reason..."
-              className="w-full p-4 rounded-xl bg-white/5 text-white border border-white/10 focus:border-emerald-500/50 focus:outline-none mb-6 transition-all"
+              className="w-full p-4 rounded-xl bg-white/5 text-white border border-white/10 focus:border-violet-500/50 focus:outline-none mb-6 transition-all"
               rows="4"
             />
             <div className="flex justify-end space-x-3">
@@ -368,7 +368,7 @@ const PostCard = ({ post, onDelete }) => {
               </button>
               <button
                 onClick={handleReport}
-                className="px-6 py-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold transition-all"
+                className="px-6 py-2 rounded-xl bg-gradient-to-r from-violet-500 to-purple-500 text-white font-bold transition-all"
               >
                 Submit
               </button>

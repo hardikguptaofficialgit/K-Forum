@@ -244,7 +244,7 @@ const PostDetail = () => {
       academics: 'bg-blue-500',
       events: 'bg-purple-500',
       rants: 'bg-red-500',
-      internships: 'bg-[#17d059]',
+      internships: 'bg-[#a78bfa]',
       'lost-found': 'bg-yellow-500',
       clubs: 'bg-indigo-500',
       general: 'bg-gray-500'
@@ -255,7 +255,7 @@ const PostDetail = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#17d059]"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#a78bfa]"></div>
       </div>
     );
   }
@@ -265,7 +265,7 @@ const PostDetail = () => {
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
           <h2 className="text-2xl font-bold text-white mb-4">Post not found</h2>
-          <Link to="/" className="text-[#17d059] hover:text-emerald-400">
+          <Link to="/" className="text-[#a78bfa] hover:text-violet-400">
             Return to home
           </Link>
         </div>
@@ -285,7 +285,7 @@ const PostDetail = () => {
               value={reportReason}
               onChange={(e) => setReportReason(e.target.value)}
               placeholder="E.g. Discriminatory language, harassment, spam..."
-              className="w-full p-4 rounded-2xl bg-white/5 text-white border border-white/10 focus:border-emerald-500/50 focus:ring-1 focus:ring-emerald-500/50 focus:outline-none mb-6 transition-all placeholder-gray-600 resize-none"
+              className="w-full p-4 rounded-2xl bg-white/5 text-white border border-white/10 focus:border-violet-500/50 focus:ring-1 focus:ring-violet-500/50 focus:outline-none mb-6 transition-all placeholder-gray-600 resize-none"
               rows="4"
             />
             <div className="flex justify-end space-x-3">
@@ -300,7 +300,7 @@ const PostDetail = () => {
               </button>
               <button
                 onClick={handleReportPost}
-                className="px-8 py-3 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-500 text-white font-bold shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/40 hover:-translate-y-0.5 transition-all"
+                className="px-8 py-3 rounded-xl bg-gradient-to-r from-violet-500 to-purple-500 text-white font-bold shadow-lg shadow-violet-500/20 hover:shadow-violet-500/40 hover:-translate-y-0.5 transition-all"
               >
                 Submit Report
               </button>
@@ -315,7 +315,7 @@ const PostDetail = () => {
           <div className="flex items-start justify-between mb-6">
             <div className="flex items-center justify-between w-full">
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center">
+                <div className="w-12 h-12 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center">
                   <User className="w-6 h-6 text-white" />
                 </div>
                 <div>
@@ -414,7 +414,7 @@ const PostDetail = () => {
               {post.tags.map((tag, index) => (
                 <span
                   key={index}
-                  className="px-3 py-1 bg-white/5 border border-white/5 text-[#17d059] text-sm rounded-full"
+                  className="px-3 py-1 bg-white/5 border border-white/5 text-[#a78bfa] text-sm rounded-full"
                 >
                   #{tag}
                 </span>
@@ -509,7 +509,7 @@ const PostDetail = () => {
                 value={newComment}
                 onChange={(e) => setNewComment(e.target.value)}
                 placeholder="Share your thoughts..."
-                className="w-full bg-white/5 text-white px-4 py-3 rounded-lg border border-white/10 focus:border-[#17d059] focus:outline-none transition-colors resize-none"
+                className="w-full bg-white/5 text-white px-4 py-3 rounded-lg border border-white/10 focus:border-[#a78bfa] focus:outline-none transition-colors resize-none"
                 rows="4"
                 required
               />
@@ -540,14 +540,14 @@ const PostDetail = () => {
                           type="checkbox"
                           checked={isAnonymousComment}
                           onChange={(e) => setIsAnonymousComment(e.target.checked)}
-                          className="rounded border-gray-600 text-[#17d059] focus:ring-[#17d059]"
+                          className="rounded border-gray-600 text-[#a78bfa] focus:ring-[#a78bfa]"
                         />
                         <span className="text-sm">Comment anonymously</span>
                       </label>
                     )}
 
                     {post.category === 'Bookies' && (
-                      <label className="flex items-center space-x-2 text-[#17d059] cursor-pointer hover:text-emerald-400 transition-colors">
+                      <label className="flex items-center space-x-2 text-[#a78bfa] cursor-pointer hover:text-violet-400 transition-colors">
                         <input
                           type="file"
                           accept="image/*"
@@ -567,7 +567,7 @@ const PostDetail = () => {
                   <button
                     type="submit"
                     disabled={submittingComment || (!newComment.trim() && commentImageFiles.length === 0)}
-                    className="w-full sm:w-auto bg-emerald-500 hover:bg-emerald-600 text-white px-6 py-2.5 rounded-xl flex items-center justify-center space-x-2 transition-all shadow-lg shadow-emerald-500/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="w-full sm:w-auto bg-violet-500 hover:bg-violet-600 text-white px-6 py-2.5 rounded-xl flex items-center justify-center space-x-2 transition-all shadow-lg shadow-violet-500/20 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed"
                   >
                     <Send className="w-4 h-4" />
                     <span className="font-bold">{submittingComment ? 'Posting...' : 'Post Answer'}</span>
@@ -594,7 +594,7 @@ const PostDetail = () => {
             <div key={comment._id} className="glass-card rounded-2xl p-4 sm:p-6">
               <div className="flex items-start justify-between">
                 <div className="flex items-start space-x-3">
-                  <div className="w-10 h-10 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
+                  <div className="w-10 h-10 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center flex-shrink-0">
                     <User className="w-5 h-5 text-white" />
                   </div>
                   <div className="flex-1">
@@ -614,7 +614,7 @@ const PostDetail = () => {
                         {comment.attachments.map((attachment, idx) => (
                           <div
                             key={idx}
-                            className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group border border-white/5 hover:border-emerald-500/30 transition-all"
+                            className="relative aspect-square rounded-xl overflow-hidden cursor-pointer group border border-white/5 hover:border-violet-500/30 transition-all"
                             onClick={() => {
                               setViewerImages(comment.attachments.map(a => a.url));
                               setSelectedImageIndex(idx);

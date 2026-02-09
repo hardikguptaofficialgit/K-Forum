@@ -31,14 +31,14 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             {/* Toggle Button */}
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="absolute -right-3 top-[56px] -translate-y-1/2 bg-gray-800 border border-emerald-500/30 text-emerald-400 p-1 rounded-full shadow-lg hover:bg-gray-700 hover:scale-110 transition-all z-50"
+                className="absolute -right-3 top-[56px] -translate-y-1/2 bg-gray-800 border border-violet-500/30 text-violet-400 p-1 rounded-full shadow-lg hover:bg-gray-700 hover:scale-110 transition-all z-50"
             >
                 {isOpen ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
             </button>
 
             {/* Minimal Logo */}
             <div className={`flex items-center ${isOpen ? 'justify-start pl-4' : 'justify-center'} mb-12 transition-all duration-300`}>
-                <div className="w-12 h-12 shrink-0 bg-gradient-to-tr from-emerald-400 to-cyan-500 rounded-2xl flex items-center justify-center shadow-lg shadow-emerald-500/20 animate-float">
+                <div className="w-12 h-12 shrink-0 bg-gradient-to-tr from-violet-400 to-fuchsia-500 rounded-2xl flex items-center justify-center shadow-lg shadow-violet-500/20">
                     <span className="text-white font-extrabold text-2xl">K</span>
                 </div>
                 <div className={`ml-4 overflow-hidden transition-all duration-300 ${isOpen ? 'w-auto opacity-100' : 'w-0 opacity-0'}`}>
@@ -56,7 +56,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                             relative flex items-center group rounded-2xl transition-all duration-300 overflow-hidden
                             ${isOpen ? 'w-full px-4 py-3 justify-start' : 'w-12 h-12 justify-center'}
                             ${isActive
-                                ? 'bg-gradient-to-br from-emerald-500 to-teal-500 text-white shadow-lg shadow-emerald-500/40'
+                                ? 'bg-gradient-to-br from-violet-500 to-purple-500 text-white shadow-lg shadow-violet-500/40'
                                 : 'text-gray-400 hover:bg-white/10 hover:text-white'
                             }
                         `}
@@ -74,7 +74,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
                                 {/* Hover Tooltip (Only when collapsed) */}
                                 {!isOpen && (
-                                    <span className="absolute left-16 px-4 py-2 bg-gray-900 border border-emerald-500/30 text-emerald-400 text-sm font-bold rounded-xl opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 pointer-events-none whitespace-nowrap z-50 shadow-2xl backdrop-blur-md">
+                                    <span className="absolute left-16 px-4 py-2 bg-gray-900 border border-violet-500/30 text-violet-400 text-sm font-bold rounded-xl opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 pointer-events-none whitespace-nowrap z-50 shadow-2xl backdrop-blur-md">
                                         {item.label}
                                     </span>
                                 )}
@@ -87,9 +87,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
             {/* User Profile Bubble */}
             {user && (
                 <div className={`mt-auto relative group px-4 w-full transition-all duration-300 ${isOpen ? 'flex items-center gap-3 px-2' : ''}`}>
-                    <div className="w-10 h-10 shrink-0 rounded-full border-2 border-emerald-500/30 p-[2px] cursor-pointer hover:border-emerald-400 transition-colors">
+                    <div className="w-10 h-10 shrink-0 rounded-full border-2 border-violet-500/30 p-[2px] cursor-pointer hover:border-violet-400 transition-colors">
                         <img
-                            src={user.avatar || `https://ui-avatars.com/api/?name=${user.name}&background=10b981&color=fff`}
+                            src={user.avatar || `https://ui-avatars.com/api/?name=${user.name}&background=8b5cf6&color=fff`}
                             alt={user.name}
                             className="w-full h-full rounded-full object-cover"
                         />
@@ -103,9 +103,9 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
                     {/* Profile Tooltip (Only when collapsed) */}
                     {!isOpen && (
                         <div className="absolute left-16 bottom-0 p-4 bg-gray-900 border border-gray-700 text-white rounded-2xl opacity-0 group-hover:opacity-100 translate-x-2 group-hover:translate-x-0 transition-all duration-300 pointer-events-none w-48 shadow-2xl glass-card z-50">
-                            <p className="font-bold text-lg truncate bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">{user.name}</p>
+                            <p className="font-bold text-lg truncate bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent">{user.name}</p>
                             <p className="text-xs text-gray-500 truncate">@{user.studentId}</p>
-                            <div className="mt-2 text-xs text-emerald-500 font-mono">ONLINE / {user.role || 'STUDENT'}</div>
+                            <div className="mt-2 text-xs text-violet-500 font-mono">ONLINE / {user.role || 'STUDENT'}</div>
                         </div>
                     )}
                 </div>

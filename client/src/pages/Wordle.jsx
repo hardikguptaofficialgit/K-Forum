@@ -183,7 +183,7 @@ const Wordle = () => {
 
     const getTileColor = (status) => {
         switch (status) {
-            case 'correct': return 'bg-emerald-500 border-emerald-500';
+            case 'correct': return 'bg-violet-500 border-violet-500';
             case 'present': return 'bg-amber-500 border-amber-500';
             case 'absent': return 'bg-gray-600 border-gray-600';
             default: return 'bg-transparent border-gray-600';
@@ -193,7 +193,7 @@ const Wordle = () => {
     const getKeyColor = (letter) => {
         const status = keyboardStatus[letter];
         switch (status) {
-            case 'correct': return 'bg-emerald-500 hover:bg-emerald-600';
+            case 'correct': return 'bg-violet-500 hover:bg-violet-600';
             case 'present': return 'bg-amber-500 hover:bg-amber-600';
             case 'absent': return 'bg-gray-700 hover:bg-gray-600';
             default: return 'bg-gray-600 hover:bg-gray-500';
@@ -214,7 +214,7 @@ const Wordle = () => {
         return (
             <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-spin rounded-full h-16 w-16 border-4 border-emerald-500 border-t-transparent mx-auto mb-4"></div>
+                    <div className="animate-spin rounded-full h-16 w-16 border-4 border-violet-500 border-t-transparent mx-auto mb-4"></div>
                     <p className="text-gray-400">Loading today's Wordle...</p>
                 </div>
             </div>
@@ -232,7 +232,7 @@ const Wordle = () => {
                     <p className="text-gray-400 mb-6">The admin hasn't set today's word yet. Check back later!</p>
                     <button
                         onClick={() => navigate('/')}
-                        className="px-6 py-3 bg-emerald-500 hover:bg-emerald-600 text-white rounded-xl font-semibold transition-all"
+                        className="px-6 py-3 bg-violet-500 hover:bg-violet-600 text-white rounded-xl font-semibold transition-all"
                     >
                         Back to Home
                     </button>
@@ -247,7 +247,7 @@ const Wordle = () => {
                 {/* Header */}
                 <div className="text-center mb-8">
                     <h1 className="text-4xl font-black text-white mb-2 flex items-center justify-center gap-3">
-                        <span className="bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent drop-shadow-sm">
+                        <span className="bg-gradient-to-r from-violet-400 to-fuchsia-400 bg-clip-text text-transparent drop-shadow-sm">
                             K-Wordle
                         </span>
                         <Sparkles className="w-8 h-8 text-amber-400 animate-pulse drop-shadow-[0_0_10px_rgba(251,191,36,0.5)]" />
@@ -266,7 +266,7 @@ const Wordle = () => {
                 {/* Streak Display */}
                 <div className="flex justify-center gap-4 mb-8">
                     <div className="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-orange-500/10 to-red-500/10 border border-orange-500/20 rounded-xl backdrop-blur-sm group hover:border-orange-500/40 transition-all">
-                        <Flame className={`w-5 h-5 ${streak.current > 0 ? 'text-orange-400 animate-fire-glow' : 'text-gray-500'}`} />
+                        <Flame className={`w-5 h-5 ${streak.current > 0 ? 'text-orange-400' : 'text-gray-500'}`} />
                         <span className="text-white font-bold">{streak.current}</span>
                         <span className="text-gray-400 text-xs uppercase font-bold tracking-wider">Streak</span>
                     </div>
@@ -328,14 +328,14 @@ const Wordle = () => {
                 {/* Game Over Message */}
                 {gameState.completed && (
                     <div className={`text-center mb-8 p-6 rounded-2xl border backdrop-blur-md animate-bounce-in ${gameState.won
-                        ? 'bg-emerald-500/10 border-emerald-500/30 shadow-[0_0_30px_rgba(16,185,129,0.2)]'
+                        ? 'bg-violet-500/10 border-violet-500/30 shadow-[0_0_30px_rgba(16,185,129,0.2)]'
                         : 'bg-red-500/10 border-red-500/30'
                         }`}>
                         {gameState.won ? (
                             <div>
                                 <span className="text-4xl mb-4 block animate-bounce">🎉</span>
                                 <h2 className="text-2xl font-black text-white mb-1">Excellent!</h2>
-                                <p className="text-gray-300">Solved in <span className="text-emerald-400 font-bold">{gameState.guesses.length}</span> tries!</p>
+                                <p className="text-gray-300">Solved in <span className="text-violet-400 font-bold">{gameState.guesses.length}</span> tries!</p>
                             </div>
                         ) : (
                             <div>

@@ -20,7 +20,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <div className="w-8 h-8 border border-[#17d059] rounded flex items-center justify-center">
+            <div className="w-8 h-8 border border-[#a78bfa] rounded flex items-center justify-center">
               {/* <span className="text-white font-bold text-lg">K</span> */}
               <img src="/kflogo.png" alt="Logo" height={50} />
             </div>
@@ -51,7 +51,7 @@ const Navbar = () => {
                   {/* Create Post Button */}
                   <Link
                     to="/create-post"
-                    className="bg-[#17d059] hover:bg-[#15b84f] text-white px-4 py-2 rounded-md text-sm font-medium flex items-center space-x-1 transition-colors"
+                    className="bg-[#a78bfa] hover:bg-[#8b5cf6] text-white px-4 py-2 rounded-md text-sm font-medium flex items-center space-x-1 transition-colors"
                   >
                     <Plus className="w-4 h-4" />
                     <span>Create Post</span>
@@ -89,7 +89,7 @@ const Navbar = () => {
                   </Link>
                   <Link
                     to="/register"
-                    className="bg-[#17d059] hover:bg-[#15b84f] text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+                    className="bg-[#a78bfa] hover:bg-[#8b5cf6] text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
                   >
                     Register
                   </Link>
