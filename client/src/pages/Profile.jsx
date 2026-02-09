@@ -115,7 +115,7 @@ const Profile = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#17d059]"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#a78bfa]"></div>
       </div>
     );
   }
@@ -141,7 +141,7 @@ const Profile = () => {
             <div className="bg-white/5 backdrop-blur-xl rounded-2xl p-6 shadow-lg border border-white/10 sticky top-24">
               <div className="text-center mb-6">
                 <div className="relative w-24 h-24 mx-auto mb-4">
-                  <div className="w-24 h-24 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center overflow-hidden">
+                  <div className="w-24 h-24 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center overflow-hidden">
                     {(profile.avatar || avatarPreview) ? (
                       <img
                         src={avatarPreview || profile.avatar}
@@ -155,7 +155,7 @@ const Profile = () => {
                   {isOwnProfile && (
                     <button
                       onClick={() => fileInputRef.current?.click()}
-                      className="absolute bottom-0 right-0 bg-[#17d059] p-2 rounded-full hover:bg-[#15b84f] transition-colors"
+                      className="absolute bottom-0 right-0 bg-[#a78bfa] p-2 rounded-full hover:bg-[#8b5cf6] transition-colors"
                     >
                       <Camera className="w-4 h-4 text-white" />
                     </button>
@@ -174,12 +174,12 @@ const Profile = () => {
                       type="text"
                       value={editData.name}
                       onChange={(e) => setEditData({ ...editData, name: e.target.value })}
-                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none"
+                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none"
                     />
                     <select
                       value={editData.year}
                       onChange={(e) => setEditData({ ...editData, year: e.target.value })}
-                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none"
+                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none"
                     >
                       <option value="1">1st Year</option>
                       <option value="2">2nd Year</option>
@@ -190,12 +190,12 @@ const Profile = () => {
                       type="text"
                       value={editData.branch}
                       onChange={(e) => setEditData({ ...editData, branch: e.target.value })}
-                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#17d059] focus:outline-none"
+                      className="w-full bg-gray-700 text-white px-3 py-2 rounded-lg border border-gray-600 focus:border-[#a78bfa] focus:outline-none"
                     />
                     <div className="flex space-x-2">
                       <button
                         type="submit"
-                        className="flex-1 bg-[#17d059] text-white py-2 rounded-lg hover:bg-[#15b84f] transition-colors"
+                        className="flex-1 bg-[#a78bfa] text-white py-2 rounded-lg hover:bg-[#8b5cf6] transition-colors"
                       >
                         Save
                       </button>
@@ -215,7 +215,7 @@ const Profile = () => {
                     {isOwnProfile && (
                       <button
                         onClick={() => setEditMode(true)}
-                        className="bg-[#17d059] text-white px-4 py-2 rounded-lg hover:bg-[#15b84f] transition-colors flex items-center space-x-2 mx-auto"
+                        className="bg-[#a78bfa] text-white px-4 py-2 rounded-lg hover:bg-[#8b5cf6] transition-colors flex items-center space-x-2 mx-auto"
                       >
                         <Edit3 className="w-4 h-4" />
                         <span>Edit Profile</span>
@@ -227,19 +227,19 @@ const Profile = () => {
 
               <div className="space-y-4">
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Mail className="w-5 h-5 text-[#17d059]" />
+                  <Mail className="w-5 h-5 text-[#a78bfa]" />
                   <span>{profile.email}</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <GraduationCap className="w-5 h-5 text-[#17d059]" />
+                  <GraduationCap className="w-5 h-5 text-[#a78bfa]" />
                   <span>{profile.year}th Year • {profile.branch}</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Calendar className="w-5 h-5 text-[#17d059]" />
+                  <Calendar className="w-5 h-5 text-[#a78bfa]" />
                   <span>Joined {new Date(profile.createdAt).toLocaleDateString()}</span>
                 </div>
                 <div className="flex items-center space-x-3 text-gray-300">
-                  <Trophy className="w-5 h-5 text-[#17d059]" />
+                  <Trophy className="w-5 h-5 text-[#a78bfa]" />
                   <span>{profile.reputation} Reputation</span>
                 </div>
               </div>
@@ -327,9 +327,9 @@ const Profile = () => {
                   </div>
                   <div className="bg-gray-700/50 rounded-lg p-3 text-center border border-gray-600">
                     <div className="flex items-center justify-center gap-1 mb-1">
-                      <Target className="w-4 h-4 text-emerald-400" />
+                      <Target className="w-4 h-4 text-violet-400" />
                     </div>
-                    <p className="text-xl font-bold text-emerald-400">{wordleStreak.totalWins}</p>
+                    <p className="text-xl font-bold text-violet-400">{wordleStreak.totalWins}</p>
                     <p className="text-xs text-gray-400">Total Wins</p>
                   </div>
                 </div>
@@ -340,11 +340,11 @@ const Profile = () => {
                 <h3 className="text-lg font-semibold text-white mb-4">Forum Statistics</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#17d059]">{profile.postCount || 0}</div>
+                    <div className="text-2xl font-bold text-[#a78bfa]">{profile.postCount || 0}</div>
                     <div className="text-sm text-gray-400">Posts</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-2xl font-bold text-[#17d059]">{profile.reputation || 0}</div>
+                    <div className="text-2xl font-bold text-[#a78bfa]">{profile.reputation || 0}</div>
                     <div className="text-sm text-gray-400">Points</div>
                   </div>
                 </div>
@@ -358,7 +358,7 @@ const Profile = () => {
                     {profile.badges.map((badge, index) => (
                       <span
                         key={index}
-                        className="px-3 py-1 bg-[#17d059]/10 text-[#17d059] text-sm rounded-full border border-[#17d059]/30"
+                        className="px-3 py-1 bg-[#a78bfa]/10 text-[#a78bfa] text-sm rounded-full border border-[#a78bfa]/30"
                       >
                         {badge.name}
                       </span>

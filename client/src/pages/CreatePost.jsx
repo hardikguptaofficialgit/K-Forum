@@ -145,7 +145,7 @@ const CreatePost = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="glass-panel p-4 sm:p-10 rounded-3xl shadow-2xl backdrop-blur-xl border border-white/5">
           <div className="text-center mb-10">
-            <h1 className="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400 mb-4 animate-float">
+            <h1 className="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-fuchsia-400 mb-4">
               Create New Post
             </h1>
             <p className="text-gray-400 text-lg">Share your thoughts with the K-Forum community</p>
@@ -164,7 +164,7 @@ const CreatePost = () => {
                 onChange={handleChange}
                 required
                 maxLength="200"
-                className="w-full bg-white/5 text-white px-6 py-4 rounded-2xl border border-gray-700/50 focus:border-emerald-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600 font-medium text-lg"
+                className="w-full bg-white/5 text-white px-6 py-4 rounded-2xl border border-gray-700/50 focus:border-violet-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600 font-medium text-lg"
                 placeholder="Give your post a catchy title..."
               />
               <div className="flex justify-end">
@@ -184,7 +184,7 @@ const CreatePost = () => {
                   <label
                     key={category.id}
                     className={`relative flex flex-col items-center justify-center p-4 rounded-2xl border cursor-pointer transition-all duration-300 group overflow-hidden ${formData.category === category.id
-                      ? 'border-emerald-500 bg-emerald-500/10 shadow-[0_0_20px_rgba(16,185,129,0.2)]'
+                      ? 'border-violet-500 bg-violet-500/10 shadow-[0_0_20px_rgba(16,185,129,0.2)]'
                       : 'border-white/5 bg-white/5 hover:bg-white/10 hover:border-white/10'
                       }`}
                   >
@@ -197,11 +197,11 @@ const CreatePost = () => {
                       className="sr-only"
                     />
                     <span className="text-3xl mb-2 group-hover:scale-110 transition-transform duration-300">{category.icon}</span>
-                    <span className={`text-sm font-bold ${formData.category === category.id ? 'text-emerald-400' : 'text-gray-400 group-hover:text-gray-200'}`}>
+                    <span className={`text-sm font-bold ${formData.category === category.id ? 'text-violet-400' : 'text-gray-400 group-hover:text-gray-200'}`}>
                       {category.name}
                     </span>
                     {formData.category === category.id && (
-                      <div className="absolute inset-0 bg-gradient-to-tr from-emerald-500/10 to-transparent pointer-events-none" />
+                      <div className="absolute inset-0 bg-gradient-to-tr from-violet-500/10 to-transparent pointer-events-none" />
                     )}
                   </label>
                 ))}
@@ -216,7 +216,7 @@ const CreatePost = () => {
                   Event Date
                 </label>
                 <div className="relative group">
-                  <Calendar className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-emerald-500 transition-colors w-5 h-5 pointer-events-none" />
+                  <Calendar className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-violet-500 transition-colors w-5 h-5 pointer-events-none" />
                   <input
                     type="date"
                     name="eventDate"
@@ -224,7 +224,7 @@ const CreatePost = () => {
                     onChange={handleChange}
                     min={new Date().toISOString().split('T')[0]}
                     required={formData.category === 'events'}
-                    className="w-full bg-white/5 text-white pl-14 pr-6 py-4 rounded-2xl border border-gray-700/50 focus:border-emerald-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600 appearance-none [&::-webkit-calendar-picker-indicator]:invert [&::-webkit-calendar-picker-indicator]:cursor-pointer [&::-webkit-calendar-picker-indicator]:opacity-50 hover:[&::-webkit-calendar-picker-indicator]:opacity-100"
+                    className="w-full bg-white/5 text-white pl-14 pr-6 py-4 rounded-2xl border border-gray-700/50 focus:border-violet-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600 appearance-none [&::-webkit-calendar-picker-indicator]:invert [&::-webkit-calendar-picker-indicator]:cursor-pointer [&::-webkit-calendar-picker-indicator]:opacity-50 hover:[&::-webkit-calendar-picker-indicator]:opacity-100"
                   />
                 </div>
               </div>
@@ -242,7 +242,7 @@ const CreatePost = () => {
                 required
                 maxLength="5000"
                 rows="8"
-                className="w-full bg-white/5 text-white px-6 py-4 rounded-2xl border border-gray-700/50 focus:border-emerald-500/50 focus:bg-white/10 focus:outline-none transition-all resize-none placeholder-gray-600 leading-relaxed"
+                className="w-full bg-white/5 text-white px-6 py-4 rounded-2xl border border-gray-700/50 focus:border-violet-500/50 focus:bg-white/10 focus:outline-none transition-all resize-none placeholder-gray-600 leading-relaxed"
                 placeholder="What's on your mind? Share your story, confession, or question..."
               />
               <div className="flex justify-end">
@@ -258,13 +258,13 @@ const CreatePost = () => {
                 Tags (Optional)
               </label>
               <div className="relative group">
-                <Tag className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-emerald-500 transition-colors w-5 h-5" />
+                <Tag className="absolute left-5 top-1/2 transform -translate-y-1/2 text-gray-500 group-focus-within:text-violet-500 transition-colors w-5 h-5" />
                 <input
                   type="text"
                   name="tags"
                   value={formData.tags}
                   onChange={handleChange}
-                  className="w-full bg-white/5 text-white pl-14 pr-6 py-4 rounded-2xl border border-gray-700/50 focus:border-emerald-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600"
+                  className="w-full bg-white/5 text-white pl-14 pr-6 py-4 rounded-2xl border border-gray-700/50 focus:border-violet-500/50 focus:bg-white/10 focus:outline-none transition-all placeholder-gray-600"
                   placeholder="academics, events, life (comma separated)"
                 />
               </div>
@@ -272,15 +272,15 @@ const CreatePost = () => {
 
             {/* Anonymous Toggle */}
             <div className={`flex flex-col sm:flex-row items-start sm:items-center justify-between p-4 sm:p-6 rounded-2xl border transition-all duration-300 gap-4 ${formData.isAnonymous
-              ? 'bg-emerald-900/10 border-emerald-500/30 shadow-[0_0_20px_rgba(16,185,129,0.05)]'
+              ? 'bg-violet-900/10 border-violet-500/30 shadow-[0_0_20px_rgba(16,185,129,0.05)]'
               : 'bg-white/5 border-white/5'
               }`}>
               <div className="flex items-center space-x-4">
-                <div className={`p-3 rounded-xl ${formData.isAnonymous ? 'bg-emerald-500/20 text-emerald-400' : 'bg-gray-800 text-gray-400'}`}>
+                <div className={`p-3 rounded-xl ${formData.isAnonymous ? 'bg-violet-500/20 text-violet-400' : 'bg-gray-800 text-gray-400'}`}>
                   {formData.isAnonymous ? <EyeOff className="w-6 h-6" /> : <Eye className="w-6 h-6" />}
                 </div>
                 <div>
-                  <h3 className={`font-bold text-lg ${formData.isAnonymous ? 'text-emerald-400' : 'text-gray-200'}`}>
+                  <h3 className={`font-bold text-lg ${formData.isAnonymous ? 'text-violet-400' : 'text-gray-200'}`}>
                     {formData.isAnonymous ? 'Anonymous Mode' : 'Public Post'}
                   </h3>
                   <p className="text-gray-500 text-sm">
@@ -299,7 +299,7 @@ const CreatePost = () => {
                   onChange={handleChange}
                   className="sr-only peer"
                 />
-                <div className="w-14 h-8 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-gradient-to-r peer-checked:from-emerald-500 peer-checked:to-teal-500 border border-gray-600"></div>
+                <div className="w-14 h-8 bg-gray-700 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[4px] after:left-[4px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-gradient-to-r peer-checked:from-violet-500 peer-checked:to-purple-500 border border-gray-600"></div>
               </label>
             </div>
 
@@ -309,11 +309,11 @@ const CreatePost = () => {
                 Images (Max 5)
               </label>
               <div className="space-y-4">
-                <label className="w-full flex flex-col items-center justify-center px-4 py-8 bg-white/5 text-gray-400 rounded-2xl border-2 border-white/10 border-dashed cursor-pointer hover:border-emerald-500/50 hover:bg-white/10 transition-all group">
+                <label className="w-full flex flex-col items-center justify-center px-4 py-8 bg-white/5 text-gray-400 rounded-2xl border-2 border-white/10 border-dashed cursor-pointer hover:border-violet-500/50 hover:bg-white/10 transition-all group">
                   <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg">
-                    <Image className="w-8 h-8 text-gray-400 group-hover:text-emerald-400 transition-colors" />
+                    <Image className="w-8 h-8 text-gray-400 group-hover:text-violet-400 transition-colors" />
                   </div>
-                  <span className="text-sm font-medium group-hover:text-emerald-300 transition-colors">Click to upload images</span>
+                  <span className="text-sm font-medium group-hover:text-violet-300 transition-colors">Click to upload images</span>
                   <span className="text-xs text-gray-600 mt-1">JPG, PNG up to 5MB each</span>
                   <input
                     type="file"
@@ -367,13 +367,13 @@ const CreatePost = () => {
               <button
                 type="submit"
                 disabled={loading || !formData.title || !formData.content || !formData.category}
-                className="w-full sm:w-auto relative overflow-hidden bg-gradient-to-r from-emerald-500 to-cyan-500 text-white px-8 sm:px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-emerald-500/40 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
+                className="w-full sm:w-auto relative overflow-hidden bg-gradient-to-r from-violet-500 to-fuchsia-500 text-white px-8 sm:px-10 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-violet-500/40 hover:-translate-y-1 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed group"
               >
                 <span className="relative z-10 flex items-center justify-center gap-2">
                   {loading ? 'Publishing...' : 'Publish Post'}
                   {!loading && <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
                 </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-emerald-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute inset-0 bg-gradient-to-r from-fuchsia-500 to-violet-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               </button>
             </div>
           </form>

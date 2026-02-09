@@ -116,7 +116,7 @@ const Admin = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#17d059]"></div>
+        <div className="animate-spin rounded-full h-32 w-32 border-b-2 border-[#a78bfa]"></div>
       </div>
     );
   }
@@ -127,7 +127,7 @@ const Admin = () => {
         {/* Header */}
         <div className="mb-8">
           <div className="flex items-center space-x-3 mb-4">
-            <Shield className="w-8 h-8 text-[#17d059]" />
+            <Shield className="w-8 h-8 text-[#a78bfa]" />
             <h1 className="text-3xl font-bold text-white">Admin Dashboard</h1>
           </div>
           <p className="text-gray-400">
@@ -142,7 +142,7 @@ const Admin = () => {
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`px-4 py-2 rounded-lg font-medium transition-all capitalize flex items-center gap-2 ${activeTab === tab
-                ? 'bg-[#17d059] text-white'
+                ? 'bg-[#a78bfa] text-white'
                 : 'bg-gray-800 text-gray-400 hover:text-white hover:bg-gray-700'
                 }`}
             >
@@ -165,7 +165,7 @@ const Admin = () => {
                     <p className="text-gray-400 text-sm">Total Users</p>
                     <p className="text-2xl font-bold text-white">{stats.totalUsers || 0}</p>
                   </div>
-                  <Users className="w-8 h-8 text-[#17d059]" />
+                  <Users className="w-8 h-8 text-[#a78bfa]" />
                 </div>
               </div>
 
@@ -175,7 +175,7 @@ const Admin = () => {
                     <p className="text-gray-400 text-sm">Total Posts</p>
                     <p className="text-2xl font-bold text-white">{stats.totalPosts || 0}</p>
                   </div>
-                  <MessageSquare className="w-8 h-8 text-[#17d059]" />
+                  <MessageSquare className="w-8 h-8 text-[#a78bfa]" />
                 </div>
               </div>
 
@@ -185,7 +185,7 @@ const Admin = () => {
                     <p className="text-gray-400 text-sm">Total Comments</p>
                     <p className="text-2xl font-bold text-white">{stats.totalComments || 0}</p>
                   </div>
-                  <TrendingUp className="w-8 h-8 text-[#17d059]" />
+                  <TrendingUp className="w-8 h-8 text-[#a78bfa]" />
                 </div>
               </div>
 
@@ -207,7 +207,7 @@ const Admin = () => {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                   {stats.categoryStats.map((category) => (
                     <div key={category._id} className="text-center">
-                      <p className="text-2xl font-bold text-[#17d059]">{category.count}</p>
+                      <p className="text-2xl font-bold text-[#a78bfa]">{category.count}</p>
                       <p className="text-gray-400 capitalize">{category._id.replace('-', ' ')}</p>
                     </div>
                   ))}
@@ -232,7 +232,7 @@ const Admin = () => {
 
               {flaggedPosts.length === 0 ? (
                 <div className="p-8 text-center">
-                  <CheckCircle className="w-12 h-12 text-[#17d059] mx-auto mb-4" />
+                  <CheckCircle className="w-12 h-12 text-[#a78bfa] mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-white mb-2">All Clear!</h3>
                   <p className="text-gray-400">No flagged posts to review.</p>
                 </div>
@@ -287,7 +287,7 @@ const Admin = () => {
 
               {reportedPosts.length === 0 ? (
                 <div className="p-8 text-center">
-                  <CheckCircle className="w-12 h-12 text-[#17d059] mx-auto mb-4" />
+                  <CheckCircle className="w-12 h-12 text-[#a78bfa] mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-white mb-2">No Reports</h3>
                   <p className="text-gray-400">All posts are looking good!</p>
                 </div>
@@ -447,7 +447,7 @@ const Admin = () => {
                           {word.word.split('').map((letter, i) => (
                             <span
                               key={i}
-                              className="w-10 h-10 bg-emerald-500 rounded flex items-center justify-center text-white font-bold text-lg"
+                              className="w-10 h-10 bg-violet-500 rounded flex items-center justify-center text-white font-bold text-lg"
                             >
                               {letter}
                             </span>

@@ -87,7 +87,7 @@ const EventCalendar = () => {
             {/* Header */}
             <div className="flex items-center justify-between mb-3">
                 <h3 className="font-bold text-white flex items-center gap-2 text-sm">
-                    <CalendarIcon className="w-4 h-4 text-emerald-400" />
+                    <CalendarIcon className="w-4 h-4 text-violet-400" />
                     Calendar
                 </h3>
                 <div className="flex items-center gap-1">
@@ -127,8 +127,8 @@ const EventCalendar = () => {
                             key={day}
                             className={`
                                 w-full py-2 flex items-center justify-center text-xs rounded-lg relative group cursor-pointer min-h-[32px]
-                                ${isTodayDay ? 'bg-emerald-500 text-white font-bold shadow-lg shadow-emerald-500/20' : 'text-gray-300 hover:bg-white/5'}
-                                ${hasEvent && !isTodayDay ? 'text-emerald-400 font-bold bg-emerald-500/5 border border-emerald-500/20' : ''}
+                                ${isTodayDay ? 'bg-violet-500 text-white font-bold shadow-lg shadow-violet-500/20' : 'text-gray-300 hover:bg-white/5'}
+                                ${hasEvent && !isTodayDay ? 'text-violet-400 font-bold bg-violet-500/5 border border-violet-500/20' : ''}
                             `}
                             onClick={(e) => {
                                 if (hasEvent) {
@@ -140,15 +140,15 @@ const EventCalendar = () => {
                         >
                             {day}
                             {hasEvent && !isTodayDay && (
-                                <div className="absolute bottom-0.5 w-1 h-1 bg-emerald-400 rounded-full" />
+                                <div className="absolute bottom-0.5 w-1 h-1 bg-violet-400 rounded-full" />
                             )}
 
                             {/* Hover Tooltip */}
                             {hasEvent && (
                                 <div className="absolute bottom-full mb-2 left-1/2 -translate-x-1/2 hidden group-hover:block z-50 w-max max-w-[150px]">
-                                    <div className="bg-gray-900 border border-emerald-500/30 rounded-xl p-2 shadow-xl whitespace-normal text-left">
+                                    <div className="bg-gray-900 border border-violet-500/30 rounded-xl p-2 shadow-xl whitespace-normal text-left">
                                         {dayEvents.map(ev => (
-                                            <div key={ev._id} className="text-[10px] text-emerald-400 font-bold truncate">
+                                            <div key={ev._id} className="text-[10px] text-violet-400 font-bold truncate">
                                                 • {ev.title}
                                             </div>
                                         ))}

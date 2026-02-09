@@ -91,7 +91,7 @@ const Chat = () => {
 
     if (loading) return (
         <div className="flex items-center justify-center min-h-[50vh]">
-            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-emerald-500"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-violet-500"></div>
         </div>
     );
 
@@ -101,7 +101,7 @@ const Chat = () => {
             <div className={`w-full md:w-1/3 glass-panel rounded-3xl overflow-hidden flex flex-col ${selectedConversation ? 'hidden md:flex' : 'flex'}`}>
                 <div className="p-4 border-b border-white/10">
                     <h2 className="text-xl font-bold text-white flex items-center gap-2">
-                        <MessageCircle className="w-6 h-6 text-emerald-400" />
+                        <MessageCircle className="w-6 h-6 text-violet-400" />
                         Messages
                     </h2>
                 </div>
@@ -118,7 +118,7 @@ const Chat = () => {
                                     key={conv._id}
                                     onClick={() => setSelectedConversation(conv)}
                                     className={`w-full p-4 rounded-xl flex items-center gap-3 transition-all ${selectedConversation?._id === conv._id
-                                            ? 'bg-emerald-500/20 border border-emerald-500/30'
+                                            ? 'bg-violet-500/20 border border-violet-500/30'
                                             : 'hover:bg-white/5 border border-transparent'
                                         }`}
                                 >
@@ -176,7 +176,7 @@ const Chat = () => {
                             <div>
                                 <h3 className="font-bold text-white">{getOtherParticipant(selectedConversation)?.name}</h3>
                                 <div className="flex items-center gap-2 text-xs text-gray-400">
-                                    <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                                    <span className="w-2 h-2 rounded-full bg-violet-500"></span>
                                     Online
                                 </div>
                             </div>
@@ -189,11 +189,11 @@ const Chat = () => {
                                 return (
                                     <div key={msg._id} className={`flex ${isMe ? 'justify-end' : 'justify-start'}`}>
                                         <div className={`max-w-[70%] p-3 rounded-2xl ${isMe
-                                                ? 'bg-emerald-500 text-white rounded-tr-none'
+                                                ? 'bg-violet-500 text-white rounded-tr-none'
                                                 : 'bg-white/10 text-gray-200 rounded-tl-none'
                                             }`}>
                                             <p>{msg.content}</p>
-                                            <p className={`text-[10px] mt-1 text-right ${isMe ? 'text-emerald-200' : 'text-gray-400'}`}>
+                                            <p className={`text-[10px] mt-1 text-right ${isMe ? 'text-violet-200' : 'text-gray-400'}`}>
                                                 {new Date(msg.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                                             </p>
                                         </div>
@@ -211,12 +211,12 @@ const Chat = () => {
                                     value={newMessage}
                                     onChange={(e) => setNewMessage(e.target.value)}
                                     placeholder="Type a message..."
-                                    className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-emerald-500/50 transition-all"
+                                    className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-violet-500/50 transition-all"
                                 />
                                 <button
                                     type="submit"
                                     disabled={!newMessage.trim()}
-                                    className="bg-emerald-500 hover:bg-emerald-600 text-white p-3 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+                                    className="bg-violet-500 hover:bg-violet-600 text-white p-3 rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
                                 >
                                     <Send className="w-5 h-5" />
                                 </button>

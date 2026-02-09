@@ -41,7 +41,7 @@ const UserProfile = () => {
   if (loading) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-4 border-[#17d059] border-t-transparent"></div>
+        <div className="animate-spin rounded-full h-12 w-12 border-4 border-[#a78bfa] border-t-transparent"></div>
       </div>
     );
   }
@@ -62,7 +62,7 @@ const UserProfile = () => {
         {/* Profile Header */}
         <div className="bg-gray-800 rounded-2xl p-8 shadow-lg border border-gray-700 mb-8">
           <div className="flex items-center space-x-6">
-            <div className="w-24 h-24 bg-gradient-to-r from-[#17d059] to-emerald-600 rounded-full flex items-center justify-center">
+            <div className="w-24 h-24 bg-gradient-to-r from-[#a78bfa] to-violet-600 rounded-full flex items-center justify-center">
               {user.avatar ? (
                 <img src={user.avatar} alt={user.name} className="w-24 h-24 rounded-full object-cover" />
               ) : (
@@ -73,19 +73,19 @@ const UserProfile = () => {
               <h1 className="text-3xl font-bold text-white mb-2">{user.name}</h1>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center text-gray-300">
-                  <Mail className="w-5 h-5 mr-2 text-[#17d059]" />
+                  <Mail className="w-5 h-5 mr-2 text-[#a78bfa]" />
                   <span>{user.email}</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <Code className="w-5 h-5 mr-2 text-[#17d059]" />
+                  <Code className="w-5 h-5 mr-2 text-[#a78bfa]" />
                   <span>{user.studentId}</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <Book className="w-5 h-5 mr-2 text-[#17d059]" />
+                  <Book className="w-5 h-5 mr-2 text-[#a78bfa]" />
                   <span>{user.branch}</span>
                 </div>
                 <div className="flex items-center text-gray-300">
-                  <Calendar className="w-5 h-5 mr-2 text-[#17d059]" />
+                  <Calendar className="w-5 h-5 mr-2 text-[#a78bfa]" />
                   <span>Year {user.year}</span>
                 </div>
               </div>
@@ -135,7 +135,7 @@ const UserProfile = () => {
                   <span>Best: <span className="text-white font-semibold">{wordleStreak.max}</span></span>
                 </div>
                 <div className="flex items-center gap-2 text-gray-400 text-sm">
-                  <Target className="w-4 h-4 text-emerald-400" />
+                  <Target className="w-4 h-4 text-violet-400" />
                   <span>Wins: <span className="text-white font-semibold">{wordleStreak.totalWins}</span></span>
                 </div>
               </div>
@@ -159,7 +159,7 @@ const UserProfile = () => {
                       key={page}
                       onClick={() => setCurrentPage(page)}
                       className={`px-4 py-2 rounded-lg ${currentPage === page
-                        ? 'bg-[#17d059] text-white'
+                        ? 'bg-[#a78bfa] text-white'
                         : 'bg-gray-800 text-gray-300 hover:bg-gray-700'}`}
                     >
                       {page}
